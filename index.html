@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My nav 2</title>
+    <style>
+        .subbox{
+            display: block;
+            height: 0;
+            width: 200px;
+            background-color: green;
+            transition-property: height;
+            transition-duration: 2s;
+        }
+        #cont:hover .subbox{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li title="Home">
+                <img src="homeico.webp" alt="Home">
+                <a href="google.com" title="Home">Home</a></li>
+            <li class="droplink" title="Dropdown">
+                <img src="dropico.png" alt="dropdown">
+                <a href="#" class="dropli">Seo Service</a>
+                <div class="slownav">
+                    <ul class="drul">
+                        <li title="Link 1"><a href="#">Find Your Keyword</a></li>
+                        <li title="Link 1"><a href="#">Overview</a></li>
+                        <li title="Link 1"><a href="#">Find Backlink</a></li>
+                        <li title="Link 1"><a href="#">Make easy</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li title="Contact" id="cont">
+                <img src="contico.png" alt="Contact Us">
+                <a href="#">Contact</a>
+                        <div class="subbox"><a href="#">Link1</a></div>
+                        <div class="subbox"><a href="#">Link1</a></div>
+                        <div class="subbox"><a href="#">Link1</a></div>
+                        <div class="subbox"><a href="#">Link1</a></div>
+            </li>
+            <li title="About">
+                <img src="aboutico.png" alt="About">
+                <a href="#">About</a></li>
+        </ul>
+    </div>
+    
+    
+</body>
+</html>

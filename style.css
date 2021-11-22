@@ -1,0 +1,76 @@
+body{
+    background: url(back.jpg) no-repeat;
+    background-size: cover;
+}
+.nav{
+    text-align: center;
+}
+.nav ul{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+.nav ul li{
+    float: left;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 10px;
+    position: relative;
+    list-style-type: none;
+}
+.nav ul li img{
+    display: inline-block;
+    height: 30px;
+    width: 30px0;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.nav ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: powderblue;
+    background-color: rgba(0, 0, 0, .2);
+    box-shadow: 14px 20px 30px 0 rgba(4,22,94,.5);
+}
+
+.nav ul li a:hover{
+    background-color: rgb(154, 205, 50,.5);
+    color: black;
+    border-radius: 20px;
+}
+.nav ul li ul li a{
+    color: black;
+    font-style: italic; 
+    box-shadow: 14px 20px 30px 0 rgba(4,22,94,.5);
+}
+
+.nav ul li ul li a:hover{
+    background-color: rgb(154, 205, 50,.6);
+    color: black; 
+}
+.nav ul li,a{
+    transition-property: width,background,border-radius;
+    transition-duration: 1s;
+}
+.nav ul li:hover{
+    width: 222px;
+}
+.nav ul li ul{
+    display: none;
+    height: 0px;
+    transition-property: min-height,width;
+    transition-duration: 1s;
+}
+.nav ul li:hover ul{
+    display: table;
+    min-height: 0px;
+}
+
+
+
+
+
+
